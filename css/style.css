@@ -1,13 +1,9 @@
-ul{
-    padding-left: 0px;
-}
-
-li {
-    list-style: none;
-}
-
 label{
     margin-right: 15px;
     width: 80px;
     float: left;
+}
+
+li{
+    list-style: none;
 }
