@@ -63,13 +63,11 @@ document.getElementById('FizzBuzz_execution').addEventListener('click', () => {
             li.innerHTML = value;
             ul.appendChild(li);
         }
-
         else if(i % fizzNumNumber === 0 && i % buzzNumNumber != 0) {
             value = 'Fizz' + i;
             li.innerHTML = value;
             ul.appendChild(li);
         }
-
         else if(i % fizzNumNumber != 0 && i % buzzNumNumber === 0) {
             value = 'Buzz' + i;
             li.innerHTML = value;
