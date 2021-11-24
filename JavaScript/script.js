@@ -1,17 +1,17 @@
 "use strict";
 
-document.getElementById('FizzBuzz_execution').addEventListener('click', () => {
+document.getElementById('fizzbuzz-execution').addEventListener('click', () => {
 
     /*id=FizzBuzz_execution_result内に現状入っている子要素を削除_開始*/
-    const parent = document.getElementById('FizzBuzz_execution_result');
+    const parent = document.getElementById('fizzbuzz-execution-result');
     parent.innerHTML = '';
     /*id=FizzBuzz_execution_result内に現状入っている子要素を削除_終了*/
 
     /*入力した値を取得_開始*/
-    const fizzNumChar = document.getElementById('FizzNum').value;
+    const fizzNumChar = document.getElementById('fizz-num').value;
     const fizzNumNumber = Number(fizzNumChar);
 
-    const buzzNumChar = document.getElementById('BuzzNum').value;
+    const buzzNumChar = document.getElementById('buzz-num').value;
     const buzzNumNumber = Number(buzzNumChar);
     /*入力した値を取得_終了*/
 
@@ -26,7 +26,7 @@ document.getElementById('FizzBuzz_execution').addEventListener('click', () => {
 
     //fizzNumNumberとbuzzNumNumberのどちらかの値が整数ではなかった時の処理
     if(Number.isInteger(fizzNumNumber) === false || Number.isInteger(buzzNumNumber) === false) {
-     
+
         alert.innerHTML = '整数以外が入力されています。整数を入力してください。'
         parent.appendChild(alert);
         return;
