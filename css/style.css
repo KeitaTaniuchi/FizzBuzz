@@ -1,0 +1,9 @@
+label{
+    margin-right: 15px;
+    width: 80px;
+    float: left;
+}
+
+li{
+    list-style: none;
+}
